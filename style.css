@@ -203,13 +203,15 @@ span {
 }
 
 .nav-icon {
-  margin: 20px 100% 0 70%;
+  margin-top: 20px;
   z-index: 1000;
+  position: absolute;
+  right: 1em;
 }
 
 #img-3,
 #img-4 {
-  margin-left: 100%;
+  width: 100%;
 }
 
 .toggle-dark {
@@ -575,12 +577,14 @@ hr {
 /* Mobile-state */
 
 
-@media (max-width: 568px){
+@media (max-width: 590px){
   .body-main{
     overflow-y: hidden;
   }
   header {
     background: rgb(1, 1, 54);
+    margin: 0 auto;
+    width: 100%;
   }
   .hero-section {
     display: flex;
@@ -643,7 +647,10 @@ hr {
     width: 25px;
   }
   .nav-icon {
-     margin: 20px 0 0 30%;
+     display: flex;
+  }
+  .nav-icon img {
+    align-self: flex-end;
   }
   .section-vision {
     display: flex;
