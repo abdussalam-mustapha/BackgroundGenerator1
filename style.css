@@ -128,51 +128,87 @@ table {
   border-spacing: 0;
 }
 
-body {
+html {
+  overflow-x: hidden;
+}
+
+.body-main {
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8));
+  overflow-x: hidden;
+}
+
+.light {
+  background: linear-gradient(to right, #fff, rgb(146, 144, 144));
+}
+
+/* header,
+main > section:nth-child(odd)  {
   background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8));
 }
 
+main > section:nth-child(even),
+footer
+ {
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
+} */
+
 header {
   display: flex;
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8))
 }
 
 .logo {
   margin-top: 20px;
   margin-left: 3.8%;
+  display: flex;
+  flex-direction: row;
+
 }
 
 .logo a {
   text-decoration: none;
-  color: #fff;
+  color: gold;
+  font-size: 2rem;
 }
 
-nav {
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+span {
+  display: flex;
+}
+
+.toggle-light {
+  margin: 20px 0 0 200%;
+  background-color: #000;
+  border: none;
+}
+
+#img-1,
+#img-2 {
+  width: 30px;
+  height: 30px;
+}
+
+.toggle-dark {
+  margin: 20px 0 0 0;
+  background-color: #fff;
+}
+
+
+
+.hero-section {
+  display: flex;
+  height: 700px;
+  height: clamp(500px, 600px, 800px);
   width: 100%;
-  margin-top: 1%;
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8))
 }
 
-.primary-nav {
-  display: flex;
-  color: #fff;
-  justify-content: flex-end;
-  margin-top: 20px;
-  font-weight: 500;
-  font-size: clamp(1rem, 0.4rem + 1vw, 1.5rem);
-}
-
-.primary-nav li {
-  list-style: none;
-  margin: 0 2% 0 2%;
-}
-
-.primary-nav li a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.all-section {
-  display: flex;
-  height: clamp(600px, 700px, 900px);
+.even-section {
+  background: rgb(212, 209, 209);
 }
 
 .col-1 {
@@ -182,12 +218,13 @@ nav {
 }
 
 .col-1 h1 {
+  font-size: 3rem;
   font-size: clamp(2rem, 1.2rem + 3vw, 3.5rem);
 }
 
 .col-1 p {
   margin: 30px 0 0 0;
-  font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+  font-size: clamp(0.6rem, 0.4rem + 1vw, 1.2rem);
 }
 
 .col-2 {
@@ -199,6 +236,7 @@ nav {
 }
 
 .col-2 img {
+  width: 450px;
   max-inline-size: 100%;
   block-size: auto;
   object-fit: cover;
@@ -234,9 +272,12 @@ nav {
   margin-left: 20px;
 }
 
-.all-section {
+.section-2 {
   display: flex;
+  height: 700px;
   height: clamp(500px, 600px, 800px);
+  width: 100%;  
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
 }
 
 .col-3 {
@@ -273,12 +314,17 @@ nav {
 }
 
 .col-4 p {
-  font-size: clamp(1rem, 0.6rem + 1vw, 2rem);
+  font-size: clamp(0.6rem, 0.4rem + 1vw, 1.2rem);
   line-height: 1.2;
 }
 
 .section-3 {
-    position: absolute;
+    position: relative;
+    display: flex;
+    height: 700px;
+    height: clamp(500px, 600px, 800px);
+    width: 100%;
+    background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8))
 }
 
 .overlap {
@@ -300,13 +346,17 @@ nav {
   width: 45%;
   color: #000;
   background-color: rgba(255, 251, 251, 0.856);
-  font-size: clamp(1rem, 0.6rem + 1vw, 2rem);
+  font-size: clamp(0.6rem, 0.4rem + 1vw, 1.2rem);
   line-height: 1.2;
   height: 40%;
   position: relative;
   left: 200px;
   top: 300px;
   padding: 20px 10px 0 10px;
+}
+
+.section-vision {
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8))
 }
 
 .vision-text {
@@ -319,9 +369,13 @@ nav {
 hr {
   margin: 0 auto;
   background-color: gold;
-  height: 10px;
+  height: 3px;
   width: 10%;
   border: none;
+}
+
+.section-music {
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
 }
 
 .section-4 {
@@ -330,28 +384,31 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 700px;
   height: clamp(300px, 350px + 0.8vh, 400px);
-  padding: 0 20px 0 20px;
+  padding: 20px 20px 20px 20px;
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
 }
 
 .school-text {
   text-align: center;
   font-size: clamp(2rem, 1.2rem + 3vw, 3.5rem);
   color: #fff;
-  position: relative;
-  top: 650px;
+  padding-top: 50px;
+}
+
+.section-explore {
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8))
 }
 
 .line {
-  position: relative;
-  top: 670px;
+  margin-top: 10px;
 }
 
 .row {
   height: 90%;
   margin: 0 20px 0 20px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 #row-1 {
@@ -379,9 +436,13 @@ hr {
    color: #fff;
 }
 
+.row div h1 {
+  font-size: clamp(1rem, .8rem + 1vw, 1.8rem);
+  padding: 15px 0 0 20px;
+}
+
 .section-5 {
   position: relative;
-  top: 800px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -390,20 +451,21 @@ hr {
 
 .section-5 img {
    text-align: center;
-   height: 90px;
-   width: 90px;
+   height: clamp(1.5rem, 2rem + 2vh, 4rem);
+   width: clamp(1.5rem, 2rem + 2vw, 4rem);
+   padding-left: 20px;
+   padding-top: 50px;
 }
 
 .icon-text {
   text-align: center;
-  position: relative;
-  top: 770px;
+  margin-top: 50px;
   color: #fff;
   font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
 }
 
-.section-5 section {
-  margin: 0 20px 0 20px;
+.card {
+  margin: 80px 20px 0 20px;
   width: 25%;
   background-color: rgb(1, 1, 43);
   text-align: left;
@@ -412,14 +474,8 @@ hr {
   border-radius: 10px;
 }
 
-.section-5 img {
-  padding-left: 20px;
-  padding-top: 50px;
-}
-
 .section-5 h3 {
-  margin-top: 50px;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, .8rem + 1vw, 1.8rem);
   font-weight: 500;
   padding-left: 20px;
 }
@@ -427,13 +483,19 @@ hr {
 .section-5 p {
   padding-top: 30px;
   padding-left: 20px;
-  font-size: 18px;
+  font-size: clamp(0.6rem, 0.4rem + 1vw, 1.2rem);
   font-weight: 300;
 }
 
-footer {
+.line-2 {
+  margin-top: 10px;
+}
+
+.footer {
   position: relative;
-  top: 900px;
+  padding-top: 50px;
+  margin-top: 60px;
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
 }
 
 .footer-container {
@@ -460,3 +522,104 @@ footer {
   line-height: 5;
   font-weight: 700;
 }
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  height: clamp(1rem, 1.5rem + 1.5vh, 3rem);
+  width: clamp(1rem, 1.5rem + 1.5vw, 3rem);
+}
+
+.even-section {
+  background: rgb(212, 209, 209);
+}
+
+.odd-section {
+  background: linear-gradient(to right, #fff, rgb(146, 144, 144));
+}
+
+.card-light {
+  background: rgb(206, 201, 201);
+  box-shadow: 0 0 10px;
+}
+
+/* Mobile-state */
+
+
+@media (max-width: 568px){
+
+  .hero-section {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+  }
+  .col-1 {
+    display: block;
+    width: 100%;
+  }
+
+  .col-2 {
+    display: block;
+    width: 90%;
+  }
+
+  .col-2 img {
+    height: 100%;
+    width: 100%;
+  }
+  .section-2 {
+    display: block;
+  }
+  .col-3 {
+    display: block;
+  }
+
+  .col-4 {
+    display:  none;
+  }
+}
+
+  .navbar {
+    position: fixed;
+    background: #fff;
+    color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transform: translate(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+  }
+
+  .primary-nav {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: #000;
+  }
+  .primary-nav li {
+    color: inherit;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+  }
+  .primary-nav li a {
+    color: #000;
+  }
+  .nav-open .navbar{
+    transform: translate(0);
+  }
+
