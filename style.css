@@ -154,7 +154,8 @@ footer
 
 header {
   display: flex;
-  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8))
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8));
+  width: 100%;
 }
 
 .logo {
@@ -187,17 +188,34 @@ span {
 }
 
 #img-1,
-#img-2 {
+#img-2,
+.img-3 {
   width: 30px;
   height: 30px;
+}
+
+#img-3 {
+  transform: rotate(90deg);
+}
+
+#img-4 {
+  display: none;
+}
+
+.nav-icon {
+  margin: 20px 100% 0 70%;
+  z-index: 1000;
+}
+
+#img-3,
+#img-4 {
+  margin-left: 100%;
 }
 
 .toggle-dark {
   margin: 20px 0 0 0;
   background-color: #fff;
 }
-
-
 
 .hero-section {
   display: flex;
@@ -551,9 +569,12 @@ hr {
 
 
 @media (max-width: 568px){
-
+  header {
+    background: rgb(1, 1, 54);
+  }
   .hero-section {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 10px auto;
     width: 80%;
     height: 100%;
@@ -574,7 +595,10 @@ hr {
     width: 100%;
   }
   .section-2 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
   }
   .col-3 {
     display: block;
@@ -583,11 +607,97 @@ hr {
   .col-4 {
     display:  none;
   }
+
+  .logo {
+    position: relative;
+    right: 100%;
+    left: 40%;
+    bottom: 0;
+    font-weight: 900;
+  }
+
+  .toggle-dark,
+  .toggle-light {
+    position: relative;
+    right: 400%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+  }
+  #img-1,
+  #img-2 {
+    height: 25px;
+    width: 25px;
+  }
+  .nav-icon {
+     margin: 20px 0 0 30%;
+  }
+  .section-vision {
+    display: block;
+  }
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .overlap {
+    margin: -200px 0 0 0;
+    width: 100%;
+  }
+  .banner {
+    position: relative;
+    top: 50%;
+    right: 100%;
+    width: 100%;
+  }
+  .section-music {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+  .section-4 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  #row-1,
+  #row-2,
+  #row-3,
+  .card {
+    display: block;
+    height: 350px;
+    width: 300px;
+    margin: 30px 0 0 0;
+  }
+  .section-explore {
+   
+    width: 100%;
+    margin: 0 auto;
+  }
+  .section-5 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+   
+  }
 }
 
   .navbar {
     position: fixed;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.918);
     color: black;
     top: 0;
     bottom: 0;

@@ -11,6 +11,10 @@ const footer = document.querySelector(".footer");
 const header = document.querySelector(".header");
 const card = document.querySelectorAll(".card");
 const dark = document.querySelector(".toggle-dark");
+const bar = document.querySelector("#img-3");
+const cross = document.querySelector("#img-4");
+const nav = document.querySelector(".navbar");
+
 
 
 let isDark = true;
@@ -48,4 +52,16 @@ dark.onclick = () => {
     card.forEach(k => {
     k.classList.remove("card-light");
     })
+}
+
+bar.onclick = () => {
+    bar.style.display = "none";
+    cross.style.display = "block";
+    document.body.classList.add("nav-open")
+}
+
+cross.onclick = () => {
+    cross.style.display = "none";
+    bar.style.display = "block";
+    document.body.classList.remove("nav-open")
 }
