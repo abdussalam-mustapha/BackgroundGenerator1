@@ -177,7 +177,7 @@ header {
 }
 
 .toggle-light {
-  margin: 20px 0 0 200%;
+  margin: 20px 0 0 220%;
   background-color: #000;
   border: none;
 }
@@ -215,8 +215,9 @@ header {
 }
 
 .toggle-dark {
-  margin: 20px 0 0 0;
+  margin: 20px 0 0 220%;
   background-color: #fff;
+  border: none;
 }
 
 .hero-section {
@@ -229,6 +230,7 @@ header {
 
 .even-section {
   background: rgb(212, 209, 209);
+  color: #000;
 }
 
 .col-1 {
@@ -563,10 +565,12 @@ hr {
 
 .even-section {
   background: rgb(212, 209, 209);
+  color: #000;
 }
 
 .odd-section {
   background: linear-gradient(to right, #fff, rgb(146, 144, 144));
+  color: #000;
 }
 
 .card-light {
@@ -637,7 +641,7 @@ hr {
   }
   .toggle-span {
     position: absolute;
-    right: 110%;
+    right: 100%;
   }
   .toggle-dark,
   .toggle-light {

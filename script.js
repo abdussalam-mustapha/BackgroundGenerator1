@@ -30,6 +30,8 @@ toggleBtn.onclick = () => {
     sectionFour.classList.add("odd-section");
     sectionX.classList.add("even-section");
     footer.classList.add("odd-section");
+    toggleBtn.style.display = "none"
+    dark.style.display = "inline-block"
 
     card.forEach(k => {
     k.classList.add("card-light");
@@ -48,6 +50,8 @@ dark.onclick = () => {
     sectionFour.classList.remove("odd-section");
     sectionX.classList.remove("even-section");
     footer.classList.remove("odd-section");
+    dark.style.display = "none";
+    toggleBtn.style.display = "inline-block";
 
     card.forEach(k => {
     k.classList.remove("card-light");
