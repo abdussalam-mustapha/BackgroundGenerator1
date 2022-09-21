@@ -688,7 +688,7 @@ hr {
     display: flex;
     flex-direction: column;
     height: 350px;
-    width: 80%;
+    width: 100%;
     margin: 30px 0 0 0;
   }
   .section-explore {
@@ -722,6 +722,8 @@ hr {
   #btn-1,
   #btn-2 {
     border-radius: 5px;
+    display: block;
+    margin: 10px auto;
   }
 }
 
