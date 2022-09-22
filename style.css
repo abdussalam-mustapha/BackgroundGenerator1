@@ -133,24 +133,13 @@ html {
 }
 
 .body-main {
-  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8));
+  background: linear-gradient(to right, rgb(1, 2, 59), rgb(1, 2, 59));
   overflow-x: hidden;
 }
 
 .light {
-  background: linear-gradient(to right, #fff, rgb(146, 144, 144));
+  background: linear-gradient(to right, rgb(236, 234, 234), rgb(236, 234, 234));
 }
-
-/* header,
-main > section:nth-child(odd)  {
-  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8));
-}
-
-main > section:nth-child(even),
-footer
- {
-  background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
-} */
 
 header {
   display: flex;
@@ -211,7 +200,6 @@ header {
 
 .toggle-dark {
   margin: 20px 0 0 200%;
-  background-color: #fff;
   border: none;
   display: none;
 }
@@ -290,7 +278,7 @@ header {
   height: 700px;
   height: clamp(500px, 600px, 800px);
   width: 100%;  
-  background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
+  background: linear-gradient(to right, rgb(1, 2, 59), rgb(1, 2, 59));
   color: #fff;
 }
 
@@ -371,6 +359,7 @@ header {
 .section-vision {
   background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8));
   color: #fff;
+  padding-top: 30px;
 }
 
 .vision-text {
@@ -388,7 +377,7 @@ hr {
 }
 
 .section-music {
-  background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
+  background: linear-gradient(to right, rgb(1, 2, 59), rgb(1, 2, 59));
   color: #fff;
 }
 
@@ -400,7 +389,7 @@ hr {
   align-items: center;
   height: clamp(300px, 350px + 0.8vh, 400px);
   padding: 20px 20px 20px 20px;
-  background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
+  background: linear-gradient(to right, rgb(1, 2, 59), rgb(1, 2, 59));
   color: #fff;
 }
 
@@ -413,6 +402,7 @@ hr {
 .section-explore {
   background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8));
   color: #fff;
+  padding-top: 30px;
 }
 
 .line {
@@ -467,6 +457,7 @@ hr {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 
 .section-5 img {
@@ -474,7 +465,6 @@ hr {
    height: clamp(1.5rem, 2rem + 2vh, 4rem);
    width: clamp(1.5rem, 2rem + 2vw, 4rem);
    padding-left: 20px;
-   padding-top: 50px;
 }
 
 .icon-text {
@@ -491,6 +481,7 @@ hr {
   height: 300px;
   color: #fff;
   border-radius: 10px;
+  padding-top: 20px;
 }
 
 .card-light {
@@ -499,17 +490,23 @@ hr {
   color: #000;
 }
 
+.card img {
+  margin-top: 30px;
+}
+
 .section-5 h3 {
   font-size: clamp(1rem, .8rem + 1vw, 1.8rem);
   font-weight: 500;
   padding-left: 20px;
+  margin-top: 40px;
 }
 
 .section-5 p {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-left: 20px;
   font-size: clamp(0.6rem, 0.4rem + 1vw, 1.2rem);
   font-weight: 300;
+  padding-bottom: 100px;
 }
 
 .line-2 {
@@ -520,7 +517,7 @@ hr {
   position: relative;
   padding-top: 50px;
   margin-top: 60px;
-  background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
+  background: linear-gradient(to right, rgb(1, 2, 59), rgb(1, 2, 59));
   color: #fff;
 }
 
@@ -570,7 +567,7 @@ hr {
 }
 
 .odd-section {
-  background: linear-gradient(to right, #fff, rgb(146, 144, 144));
+  background: rgb(236, 234, 234);
   color: #000;
 }
 
@@ -583,7 +580,7 @@ hr {
     overflow-y: hidden;
   }
   header {
-    background: rgb(1, 1, 54);
+    background-color: rgb(1, 1, 54);
     margin: 0 auto;
     width: 100%;
   }
