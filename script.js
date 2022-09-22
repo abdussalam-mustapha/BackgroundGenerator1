@@ -14,10 +14,9 @@ const dark = document.querySelector(".toggle-dark");
 const bar = document.querySelector("#img-3");
 const cross = document.querySelector("#img-4");
 const nav = document.querySelector(".navbar");
+const mainSection = document.querySelector(".mainSection");
+const row = document.querySelectorAll(".row-child");
 
-
-
-let isDark = true;
 
 toggleBtn.onclick = () => {
     main.classList.add("light")
@@ -30,13 +29,17 @@ toggleBtn.onclick = () => {
     sectionFour.classList.add("odd-section");
     sectionX.classList.add("even-section");
     footer.classList.add("odd-section");
-    toggleBtn.style.display = "none"
-    dark.style.display = "inline-block"
+    dark.style.display = "block";
+    toggleBtn.style.display = "none";
+
 
     card.forEach(k => {
     k.classList.add("card-light");
     })
-   
+
+    row.forEach(r => {
+        r.classList.add("row-alt");
+    })
 }
 
 dark.onclick = () => {
@@ -50,18 +53,22 @@ dark.onclick = () => {
     sectionFour.classList.remove("odd-section");
     sectionX.classList.remove("even-section");
     footer.classList.remove("odd-section");
+    toggleBtn.style.display = "block";
     dark.style.display = "none";
-    toggleBtn.style.display = "inline-block";
 
     card.forEach(k => {
     k.classList.remove("card-light");
+    })
+
+    row.forEach(r => {
+        r.classList.remove("row-alt");
     })
 }
 
 bar.onclick = () => {
     bar.style.display = "none";
     cross.style.display = "block";
-    document.body.classList.add("nav-open")
+    document.body.classList.add("nav-open");
 }
 
 cross.onclick = () => {

@@ -177,7 +177,7 @@ header {
 }
 
 .toggle-light {
-  margin: 20px 0 0 220%;
+  margin: 20px 0 0 200%;
   background-color: #000;
   border: none;
 }
@@ -203,21 +203,17 @@ header {
 }
 
 .nav-icon {
-  margin-top: 20px;
+  margin-top: 25px;
   z-index: 1000;
   position: absolute;
   right: 1em;
 }
 
-#img-3,
-#img-4 {
-  width: 100%;
-}
-
 .toggle-dark {
-  margin: 20px 0 0 220%;
+  margin: 20px 0 0 200%;
   background-color: #fff;
   border: none;
+  display: none;
 }
 
 .hero-section {
@@ -225,16 +221,11 @@ header {
   height: 700px;
   height: clamp(500px, 600px, 800px);
   width: 100%;
-  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8))
-}
-
-.even-section {
-  background: rgb(212, 209, 209);
-  color: #000;
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8));
+  color: #fff;
 }
 
 .col-1 {
-  color: #fff;
   margin: 20% 3% 0 3%;
   width: 60%;
 }
@@ -300,6 +291,7 @@ header {
   height: clamp(500px, 600px, 800px);
   width: 100%;  
   background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
+  color: #fff;
 }
 
 .col-3 {
@@ -323,7 +315,6 @@ header {
 
 .col-4 {
   width: 60%;
-  color: #fff;
   width: 40%;
   height: 75%;
   margin: 15px;
@@ -346,7 +337,7 @@ header {
     height: 700px;
     height: clamp(500px, 600px, 800px);
     width: 100%;
-    background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8))
+    background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8));
 }
 
 .overlap {
@@ -378,12 +369,12 @@ header {
 }
 
 .section-vision {
-  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8))
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8));
+  color: #fff;
 }
 
 .vision-text {
   text-align: center;
-  color: #fff;
   font-size: clamp(2rem, 1.2rem + 3vw, 3.5rem);
   margin-top: 50px;
 }
@@ -398,6 +389,7 @@ hr {
 
 .section-music {
   background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
+  color: #fff;
 }
 
 .section-4 {
@@ -409,17 +401,18 @@ hr {
   height: clamp(300px, 350px + 0.8vh, 400px);
   padding: 20px 20px 20px 20px;
   background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
+  color: #fff;
 }
 
 .school-text {
   text-align: center;
   font-size: clamp(2rem, 1.2rem + 3vw, 3.5rem);
-  color: #fff;
   padding-top: 50px;
 }
 
 .section-explore {
-  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8))
+  background: linear-gradient(to right, rgb(3, 0, 31), rgb(10, 8, 8));
+  color: #fff;
 }
 
 .line {
@@ -451,11 +444,16 @@ hr {
   background-size: cover;
 }
 
-.row div {
+.row-child {
    background-color: rgba(0, 0, 0, 0.445);
    height: 160px;
    margin-top: 50%;
    color: #fff;
+}
+
+.row-alt {
+  background-color: rgba(255, 255, 255, 0.842);
+  color: #000;
 }
 
 .row div h1 {
@@ -482,7 +480,6 @@ hr {
 .icon-text {
   text-align: center;
   margin-top: 50px;
-  color: #fff;
   font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
 }
 
@@ -494,6 +491,12 @@ hr {
   height: 300px;
   color: #fff;
   border-radius: 10px;
+}
+
+.card-light {
+  background: rgb(206, 201, 201);
+  box-shadow: 0 0 10px;
+  color: #000;
 }
 
 .section-5 h3 {
@@ -518,12 +521,12 @@ hr {
   padding-top: 50px;
   margin-top: 60px;
   background: linear-gradient(to right, rgb(3, 0, 31), rgb(1, 2, 59));
+  color: #fff;
 }
 
 .footer-container {
   display: flex;
   flex-direction: row;
-  color: #fff;
 }
 
 .footer-container ul {
@@ -533,7 +536,6 @@ hr {
 }
 
 .footer-container li {
-  color: #fff;
   line-height: 2;
   font-size: 17px;
   font-weight: 500;
@@ -557,7 +559,6 @@ hr {
 }
 
 .footer-text {
-  color: #fff;
   text-align: center;
   padding: 50px 0 30px 0;
   font-size: 18px;
@@ -573,10 +574,6 @@ hr {
   color: #000;
 }
 
-.card-light {
-  background: rgb(206, 201, 201);
-  box-shadow: 0 0 10px;
-}
 
 /* Mobile-state */
 
@@ -593,7 +590,7 @@ hr {
   .hero-section {
     display: flex;
     flex-direction: column;
-    margin: 10px auto;
+    margin: 0 auto;
     width: 80%;
     height: 100%;
     text-align: center;
@@ -608,6 +605,7 @@ hr {
     display: block;
     width: 100%;
     margin: 0 auto;
+    border: none;
   }
 
   .col-2 img {
@@ -623,6 +621,7 @@ hr {
   .col-3 {
     width: 100%;
     margin: 40px auto;
+    border: none;
   }
 
   .col-4 {
@@ -632,16 +631,17 @@ hr {
   .logo {
     position: relative;
     right: 100%;
-    left: 40%;
+    left: 30%;
     bottom: 0;
     font-weight: 900;
   }
   .logo a {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .toggle-span {
     position: absolute;
     right: 100%;
+    margin: 0;
   }
   .toggle-dark,
   .toggle-light {
@@ -662,6 +662,7 @@ hr {
   .overlap {
     margin: -200px 0 0 0;
     width: 100%;
+    border: none;
   }
   .banner {
     position: relative;
@@ -726,6 +727,7 @@ hr {
     border-radius: 5px;
     display: block;
     margin: 10px auto;
+    width: 50%;
   }
 }
 
