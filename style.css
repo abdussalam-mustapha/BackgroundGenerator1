@@ -135,6 +135,7 @@ html {
 .body-main {
   background: linear-gradient(to right, rgb(1, 2, 59), rgb(1, 2, 59));
   overflow-x: hidden;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .light {
@@ -439,6 +440,7 @@ hr {
    height: 160px;
    margin-top: 50%;
    color: #fff;
+   border-radius: 0 0 10px 10px;
 }
 
 .row-alt {
@@ -588,19 +590,24 @@ hr {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     height: 100%;
     text-align: center;
+    padding-bottom: 50px;
   }
   .col-1 {
     display: block;
-    width: 100%;
+    width: 80%;
     margin: 100px auto;
+  }
+
+  .col-1 p {
+    font-size: 16px;
   }
 
   .col-2 {
     display: block;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     border: none;
   }
@@ -617,17 +624,28 @@ hr {
   }
   .col-3 {
     width: 100%;
-    margin: 40px auto;
+    margin: 10px auto;
     border: none;
   }
 
-  .col-4 {
-    display:  none;
+  .col-3 img {
+    height: 70%;
   }
-
+  .col-4 {
+    width: 100%;
+    bottom: 150px;
+    position: relative;
+    text-align: center;
+    height: 100%;
+    display: block;
+    height: 1000px;
+  }
+  .col-4 p {
+    font-size: 16px;
+  }
   .logo {
     position: relative;
-    right: 100%;
+    right: 200%;
     left: 30%;
     bottom: 0;
     font-weight: 900;
@@ -647,15 +665,15 @@ hr {
   .section-vision {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   .section-3 {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
-  }
+    }
   .overlap {
     margin: -200px 0 0 0;
     width: 100%;
@@ -665,19 +683,21 @@ hr {
     position: relative;
     top: 30%;
     left: 0;
-    width: 100%;
+    width: 93%;
+     font-size: 16px;
+     text-align: center;
   }
   .section-music {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     height: 100%;
   }
   .section-4 {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     height: 100%;
   }
@@ -687,16 +707,16 @@ hr {
   .card {
     display: flex;
     flex-direction: column;
-    height: 350px;
-    width: 100%;
+    height: 250px;
+    width: 70%;
     margin: 30px 0 0 0;
   }
   .section-explore {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   .section-5 {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -715,7 +735,6 @@ hr {
   }
   .footer-text {
     text-align: center;
-    color: #fff;
     font-size: 18px;
     margin-top: 50px;
   }
@@ -734,11 +753,13 @@ hr {
     color: black;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 50%;
     right: 0;
     z-index: 100;
-    transform: translate(100%);
+    transform: translate(200%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    height: 50%;
+    width: 50%;
   }
 
   .primary-nav {
@@ -761,6 +782,7 @@ hr {
   }
   .primary-nav li a {
     color: #000;
+    text-decoration: none;
   }
   .nav-open .navbar{
     transform: translate(0);

@@ -30,6 +30,7 @@ toggleBtn.onclick = () => {
     sectionX.classList.add("even-section");
     footer.classList.add("odd-section");
     dark.style.display = "block";
+    header.style.backgroundColor = "gray";
     toggleBtn.style.display = "none";
 
 
